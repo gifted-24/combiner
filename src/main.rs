@@ -1,3 +1,7 @@
+mod args;
+use args::Args;
+
 fn main() {
-    println!("Hello, world!");
+    let args: Args = Args::new();
+    println!("{:#?}", args);
 }
